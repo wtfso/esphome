@@ -32,7 +32,7 @@ void PCD8544::initialize() {
 
   this->command(this->PCD8544_FUNCTIONSET | this->PCD8544_EXTENDEDINSTRUCTION);
   // LCD bias select (4 is optimal?)
-  this->command(this->PCD8544_SETBIAS | 0x04);
+  this->command(this->PCD8544_SETBIAS | 0x10);
 
   // contrast
   this->command(this->PCD8544_SETVOP | this->contrast_);
